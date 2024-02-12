@@ -20,7 +20,6 @@ export class SalesOrderService {
       return await salesOrderApi
         .requestBuilder()
         .getAll()
-        .top(10)
         .addCustomHeaders({ Accept: 'application/json' })
         .execute(this.destination);
     } catch (error) {

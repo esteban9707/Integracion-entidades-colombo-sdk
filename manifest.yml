@@ -1,6 +1,6 @@
 ---
 applications:
-- name: pedidosapp
+- name: integracionColomboApp
   path: .
   memory: 128M
   buildpacks:

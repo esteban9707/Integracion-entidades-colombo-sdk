@@ -28,7 +28,6 @@ export class BusinessPartnerService {
     return await businessPartnerApi
       .requestBuilder()
       .getByKey(id)
-      .select(businessPartnerApi.schema.TO_BUSINESS_PARTNER_ADDRESS)
       .execute(this.destination);
   }
 

@@ -16,6 +16,8 @@ export class BusinessPartnerService {
     password: 'AHyGnbty8neBGTVtGtbgJmpyoV#VtibskwjUTUou',
   };
 
+  //destination = JSON.parse(process.env.destination);
+
   async getAllBusinessPartners(): Promise<BusinessPartner[]> {
     return await businessPartnerApi
       .requestBuilder()
